@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: rtinv
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP:localhost:9092}
+    consumer:
+      group-id: ${spring.application.name}
+      auto-offset-reset: earliest
+
+# custom properties read by CassandraConfig
+cassandra:
+  contactPoints: ${CASSANDRA_CONTACT:127.0.0.1}
+  keyspace: rtinv
+  localDatacenter: dc1
+  port: 9042
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+# app-specific
+app:
+  kafka:
+    topic: inventory_price_events
+  reserve:
+    ttl-seconds: 300

@@ -1,0 +1,63 @@
+Starting a Gradle Daemon, 1 busy and 2 incompatible and 1 stopped Daemons could not be reused, use --status for details
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-09-04T15:07:14.508-04:00  INFO 91528 --- [rtinv] [           main] com.example.rtinv.RtinvApplication       : Starting RtinvApplication using Java 21.0.8 with PID 91528 (/Users/sahithi/realtime-inventory/build/classes/java/main started by sahithi in /Users/sahithi/realtime-inventory)
+2025-09-04T15:07:14.509-04:00  INFO 91528 --- [rtinv] [           main] com.example.rtinv.RtinvApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-04T15:07:14.831-04:00  INFO 91528 --- [rtinv] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-04T15:07:14.835-04:00  INFO 91528 --- [rtinv] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-04T15:07:14.835-04:00  INFO 91528 --- [rtinv] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-04T15:07:14.849-04:00  INFO 91528 --- [rtinv] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-04T15:07:14.850-04:00  INFO 91528 --- [rtinv] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
+2025-09-04T15:07:14.952-04:00  INFO 91528 --- [rtinv] [           main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.17.0
+2025-09-04T15:07:14.981-04:00  INFO 91528 --- [rtinv] [           main] c.d.o.d.i.c.c.CqlPrepareAsyncProcessor   : Adding handler to invalidate cached prepared statements on type changes
+2025-09-04T15:07:15.197-04:00  INFO 91528 --- [rtinv] [     s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2025-09-04T15:07:15.475-04:00  INFO 91528 --- [rtinv] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-04T15:07:15.492-04:00  WARN 91528 --- [rtinv] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-09-04T15:07:17.569-04:00  INFO 91528 --- [rtinv] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-04T15:07:17.575-04:00 ERROR 91528 --- [rtinv] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+
+> Task :bootRun FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command '/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6s
+4 actionable tasks: 1 executed, 3 up-to-date
